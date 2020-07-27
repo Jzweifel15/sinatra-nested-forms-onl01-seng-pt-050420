@@ -6,10 +6,12 @@
 
 <h2>Display your first ship here</h2>
 <h3>First Ship</h3>
-<% @ships.each do |ship| %>
-  <h4>Name: <%= ship.name %></h4>
-  <h4>Type: <%= ship.type %></h4>
-  <h4>Booty: <%= ship.booty %></h4>
+<% @ships.each.with_index do |ship, i| %>
+  <% if i == 0 %>
+    <h4>Name: <%= ship.name %></h4>
+    <h4>Type: <%= ship.type %></h4>
+    <h4>Booty: <%= ship.booty %></h4>
+  <% end %>
 <% end %>
 
 
