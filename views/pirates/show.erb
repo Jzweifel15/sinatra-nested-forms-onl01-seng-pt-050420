@@ -21,8 +21,10 @@
 <h3>Second Ship</h3>
 <% @ships.each.with_index do |ship, i| %>
   <% if i == 1 %>
-    <h4>Name: <%= ship.name %></h4>
-    <h4>Type: <%= ship.type %></h4>
-    <h4>Booty: <%= ship.booty %></h4>
+    <ul>
+      <li>Name: <%= ship.name %></li>
+      <li>Type: <%= ship.type %></li>
+      <li>Booty: <%= ship.booty %></li>
+    </ul>
   <% end %>
 <% end %>
