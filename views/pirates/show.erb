@@ -7,9 +7,9 @@
 <h2>Display your first ship here</h2>
 <h3>First Ship</h3>
 <% @ships.each do |ship| %>
-  <h4>Name: <%= @ships.name %></h4>
-  <h4>Type: <%= @ships.type %></h4>
-  <h4>Booty: <%= @ships.booty %></h4>
+  <h4>Name: <%= ship.name %></h4>
+  <h4>Type: <%= ship.type %></h4>
+  <h4>Booty: <%= ship.booty %></h4>
 <% end %>
 
 
